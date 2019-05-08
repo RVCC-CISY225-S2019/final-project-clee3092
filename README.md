@@ -1,24 +1,104 @@
-# Final Project
-Web Dev I Final Project
+# Project 7
+## Add responsive web design for tablets and wide screens & Add styling for print
 
-List of features:
+**You are expected to thoroughly review the materials in Module Week 10 as well as Module Week 6. You must use our CSS formatting rules from the CISY 225 Style Guide when writing your CSS. You are also required to use Beautify inside of Brackets. I encourage you to beautify often as you write code for your HTML and CSS.**
 
-a.	Header displaying a logo and page title.
 
-b.	Navbar with responsive single page navigation.
-  
-c.	Profile section including a profile photo and a bio. 
+**You Must Have a Perfect Project 6 Repo. Make all changes to P6 before starting this project. Your grade depends on this. If you need help, ask me for help.**
 
-d.	Photo gallery including 3 photos. 
+In this project you are using the design document as shown in 
 
-e.	Article (story) as introduced in Project 5. The article will have a drop cap on the first letter of its first paragraph.
+[Adobe XD RWD of About Me](https://xd.adobe.com/spec/a5db66b4-3086-4f9b-4c62-b0ecce091949-d3ea/ "Adobe XD RWD of ABout Me")
 
-f.	Additional article (blog) discussing an advanced CSS technique the student has chosen to feature and demonstrate.
+You will be adding media queries and CSS grids to get your About Me page looking similar to the design images.
 
-g.	Contact form 
+0. Use Project 6 as your starter code.
+1. Make room at the bottom of your styles.css file to add new styling.
+2. Add the following shell code.
 
-h.	Footer 
-  
-Credit to Remy for the 3d effect.
+````
+/*  grids */
 
-By Christian Lee
+main {
+	display: grid;
+}
+
+/* hero content */
+
+.content {
+	display: grid;
+}
+
+/* about content */
+
+.about-content {
+	display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+	display: grid;
+}
+
+/*  article */
+
+article {
+	display: grid;
+}
+
+/* form container */
+.form-container {
+	display: grid;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	/*	article */
+
+	/*	form */
+
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	/*	article */
+
+	/*	form */
+
+}
+````
+
+3. Edit your HTML to match classes, id needed to match the above shell.
+4. Edit the CSS to add layout for tablets using the media query.
+5. Test your layout using Developer Tools.
+6. Edit the CSS to add layout for tablets using the media query.
+7. Add an external stylesheet for print using the [How to Create Printer-friendly Pages with CSS](https://www.sitepoint.com/css-printer-friendly-pages/ "How to Create Printer-friendly Pages with CSS")
+8. Validate, validate, validate and beautify, beautify, beautify before submitting.

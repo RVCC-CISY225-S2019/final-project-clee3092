@@ -1,0 +1,281 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+@import url(http://fonts.googleapis.com/css?family=Seaweed+Script);
+
+body {
+    font-family: 'Noto Serif SC', serif;
+    margin: 0;
+    text-align: center;
+    background-color: #E85F29;
+    color: #d5e271;
+    padding-top: 1%;
+}
+
+.firstcharacter {
+    color: #E85F29;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.page-title {
+    margin-top: 22%;
+}
+
+.logo {
+    min-height: 12.5rem;
+}
+
+img {
+    max-width: 100%;
+    float: center;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    color: #d5e271;
+    background-color: #333333;
+}
+
+button:hover {
+    color: white;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 50%;
+    margin: 0;
+}
+
+legend {
+    max-width: 40%;
+    max-height: 40%;
+    overflow: hidden;
+}
+
+input:focus,
+textarea:focus {
+    border-radius: 5px;
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+    min-height: 8rem;
+
+}
+
+
+/*link colors */
+
+a:link {
+    color: white
+}
+
+/* extruding effect CSS*/
+.plate {
+    width: 410px;
+    margin: 10% auto;
+}
+
+.shadow {
+    color: #fff;
+    font-family: Arvo;
+    font-weight: bold;
+    text-shadow:
+        -3px -3px 0 #222,
+        3px -3px 0 #222,
+        -3px 3px 0 #222,
+        3px 3px 0 #222,
+        4px 4px 0 #fff,
+        5px 5px 0 #fff,
+        6px 6px 0 #fff,
+        7px 7px 0 #fff;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.script {
+    font-family: "Seaweed Script";
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    margin: 0;
+}
+
+.script span {
+    background-color: #222;
+    padding: 0 0.3em;
+}
+
+.script:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+}
+
+.text1 {
+    font-size: 60px;
+}
+
+.text2 {
+    font-size: 169px;
+}
+
+.text3 {
+    font-size: 100px;
+}
+
+/*  grids */
+
+
+/* hero content */
+
+.content {
+    display: grid;
+    background-color: #404040;
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+    background-color: #404040;
+}
+
+figure {
+    display: grid;
+    background-color: #404040;
+}
+
+/*  article */
+
+article {
+    display: grid;
+    text-align: left;
+    background-color: #404040;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+    background-color: #404040;
+    margin: 1%;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #404040;
+
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /* hero content */
+    .mobile-first {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*	about content */
+
+    .content picture,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+    }
+
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+
+
+    /*  article */
+
+    article {
+        grid-template-columns: 1fr 48rem 1fr;
+    }
+
+    article h1,
+    article .story-body {
+        grid-column: 2/3;
+    }
+
+    /* form container */
+    .form-container {
+        grid-template-columns: 1fr 48rem 1fr;
+    }
+
+    .form-container h1,
+    form {
+        grid-column: 2/3
+    }
+
+    /* footer */
+
+    footer {
+        display: grid;
+        font-size: 1.25rem;
+    }
+
+
+
+
+
+    /* wide screen layout >=64rem (1024px) */
+
+    @media screen and (min-width: 64rem) {}
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .gallery h1 {
+        grid-column: 1/4;
+
+    }
+
+    /*  article */
