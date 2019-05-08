@@ -5,11 +5,11 @@ List of features:
 
 a.	Header displaying a logo and page title.
 
-b.	Navbar with responsive single page navigation using a <nav> element with links to parts of the page. A new navbar list item will be added to link to the new article that will also be included.
+b.	Navbar with responsive single page navigation.
   
-c.	Profile section including a profile photo and a bio. The profile picture will be styled. The bio section from Project 1 will be rewritten and styled.
+c.	Profile section including a profile photo and a bio. 
 
-d.	Photo gallery including a minimum of 3 photos. 
+d.	Photo gallery including 3 photos. 
 
 e.	Article (story) as introduced in Project 5. The article will have a drop cap on the first letter of its first paragraph.
 
