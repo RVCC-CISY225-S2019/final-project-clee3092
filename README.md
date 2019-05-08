@@ -2,6 +2,7 @@
 Web Dev I Final Project
 
 List of features:
+
 a.	Header displaying a logo and page title.
 
 b.	Navbar with responsive single page navigation using a <nav> element with links to parts of the page. A new navbar list item will be added to link to the new article that will also be included.
